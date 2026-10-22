@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">مس‌آموز</string>
+    <string name="press_again">برای خروج دوباره دکمهٔ بازگشت را بزنید</string>
+    <string name="saved_to">در پوشهٔ Downloads ذخیره شد: %1$s</string>
+    <string name="save_failed">ذخیرهٔ فایل ممکن نشد</string>
+    <string name="download_started">دریافت فایل آغاز شد</string>
+    <string name="offline_mode">اتصال برقرار نیست؛ نسخهٔ آفلاین داخل برنامه باز شد</string>
+</resources>

@@ -1,0 +1,1 @@
+-keepclassmembers class ir.engpmis.academy.MainActivity$Bridge { @android.webkit.JavascriptInterface <methods>; }
