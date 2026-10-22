@@ -922,6 +922,91 @@ body.sb-collapsed .sb-foot{margin-inline:.4rem;padding-inline:.2rem}
 .sb-user b{display:block;color:#fff;font-size:.78rem}
 .sb-user span{display:block;font-size:.68rem;color:#8fa6c2}
 .user-chip[hidden]{display:none}
+/* ---- ورود با ایمیل: زبانه‌ها، رمز با نمایش/پنهان، نشانگر قدرت، پیام‌ها ---- */
+.lg-card .lg-org{margin:.1rem 0 0;color:#1f63b0;font-size:.8rem;font-weight:700}
+.lg-tabs{display:flex;gap:4px;margin:1rem 0 0;padding:4px;border-radius:12px;background:#eef3f9}
+.lg-tabs button{flex:1;border:0;background:none;border-radius:9px;padding:.5rem;font:inherit;font-weight:800;font-size:.88rem;color:#5d6b7c;cursor:pointer}
+.lg-tabs button.on{background:#fff;color:#1f63b0;box-shadow:0 1px 4px rgba(11,42,74,.15)}
+.lg-h2{margin:1rem 0 .2rem;font-size:1.05rem;color:#0b2a4a}
+.lg-c{text-align:center;justify-content:center}
+.lg-form .lg-ltr{direction:ltr;text-align:left;font-size:1rem;letter-spacing:.01em}
+.lg-form .lg-ltr[readonly]{background:#eef3f9;color:#5d6b7c}
+.lg-lbl{display:flex;justify-content:space-between;align-items:baseline}
+.lg-lbl label{margin:0 0 .3rem}
+.lg-link.sm{font-size:.76rem}
+.lg-pw{position:relative}
+.lg-pw .lg-in{padding-right:2.7rem}
+.lg-eye{position:absolute;right:.35rem;top:50%;transform:translateY(-50%);width:34px;height:34px;display:grid;place-items:center;border:0;border-radius:9px;background:none;color:#5d6b7c;cursor:pointer}
+.lg-eye:hover{background:#e8f0fa;color:#1f63b0}
+.lg-eye svg{width:18px;height:18px}
+.lg-kb{margin:.3rem 0 0;font-size:.74rem;color:#b5651d}
+.lg-meter{display:flex;align-items:center;gap:.55rem;margin-top:.4rem}
+.lg-meter .bars{display:flex;gap:4px;flex:none}
+.lg-meter .bars i{width:30px;height:5px;border-radius:9px;background:#e2e8f0;transition:.2s}
+.lg-meter span{font-size:.72rem;color:#7a8797;line-height:1.5}
+.lg-note{margin:.9rem 0 0;padding:.65rem .8rem;border-radius:12px;font-size:.8rem;line-height:1.8;text-align:start;background:#eef4fb;color:#123c66;border:1px solid #d4e3f5}
+.lg-note.ok{background:#e9f7ef;color:#14663e;border-color:#c3e8d2}
+.lg-note.err{background:#fdeef0;color:#a3263a;border-color:#f6ccd3}
+.lg-note svg{width:16px;height:16px;vertical-align:-3px}
+.lg-note .lg-link{color:inherit;text-decoration:underline}
+.lg-note a{color:inherit}
+.lg-err .lg-link{margin-top:.35rem;font-size:.8rem}
+.lg-wait{display:flex;align-items:center;justify-content:center;gap:.6rem;color:#5d6b7c;font-size:.88rem;padding:1.2rem 0}
+.lg-spin{width:18px;height:18px;border-radius:50%;border:2.5px solid #d4e3f5;border-top-color:#1f63b0;animation:lgSpin .8s linear infinite;display:inline-block;vertical-align:middle}
+@keyframes lgSpin{to{transform:rotate(360deg)}}
+.u-pop .u-role{display:inline-flex;align-items:center;gap:.2rem;font-size:.68rem;font-weight:700;color:var(--blue);background:color-mix(in srgb,var(--blue) 10%,transparent);border-radius:99px;padding:.1rem .45rem;vertical-align:2px}
+.u-pop .u-role svg{width:12px;height:12px}
+.u-pop .u-line{display:flex;align-items:center;gap:.5rem;width:100%;border:0;border-top:1px solid var(--line);background:none;color:var(--ink);font:inherit;font-weight:700;padding:.55rem 0;cursor:pointer;text-align:start}
+.u-pop .u-line:hover{color:var(--blue)}
+.u-pop .u-line svg{width:16px;height:16px;flex:none}
+/* ---- مدیریت کاربران ---- */
+.um-load{padding:1.4rem;text-align:center;color:var(--ink2)}
+.um-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:.7rem;margin-bottom:1rem}
+.um-stats .card{padding:.8rem 1rem}
+.um-stats b{display:block;font-size:1.35rem;color:var(--ink)}
+.um-stats span{font-size:.78rem;color:var(--ink2)}
+.um-set{padding:1rem 1.1rem;margin-bottom:1rem}
+.um-set h4{margin:0 0 .7rem;display:flex;align-items:center;gap:.4rem;font-size:.95rem}
+.um-modes{display:grid;grid-template-columns:repeat(3,1fr);gap:.6rem}
+.um-modes label{display:grid;grid-template-columns:auto 1fr;column-gap:.5rem;align-items:center;border:1.5px solid var(--line);border-radius:12px;padding:.6rem .75rem;cursor:pointer}
+.um-modes label.on{border-color:var(--blue);background:color-mix(in srgb,var(--blue) 6%,transparent)}
+.um-modes input{grid-row:span 2;accent-color:var(--blue)}
+.um-modes b{font-size:.86rem}.um-modes small{font-size:.72rem;color:var(--ink2)}
+.um-dom{margin-top:.7rem;display:grid;gap:.3rem}.um-dom label{font-size:.8rem;color:var(--ink2);font-weight:700}
+.um-dom[hidden]{display:none}
+.um-setact{margin-top:.7rem;display:flex;justify-content:flex-end}
+.um-bar{display:flex;flex-wrap:wrap;align-items:center;gap:.6rem;margin-bottom:.8rem}
+.um-q{position:relative;flex:1 1 220px;max-width:340px}
+.um-q svg{position:absolute;right:.7rem;top:50%;transform:translateY(-50%);width:16px;height:16px;color:var(--ink2)}
+.um-q .inp{padding-right:2.2rem}
+.um-f{flex-wrap:wrap}
+.um-wrap{overflow-x:auto;padding:0}
+.um-t{width:100%;border-collapse:collapse;min-width:820px;font-size:.84rem}
+.um-t th{text-align:start;font-size:.76rem;color:var(--ink2);font-weight:700;padding:.7rem .8rem;border-bottom:1px solid var(--line);white-space:nowrap}
+.um-t td{padding:.65rem .8rem;border-bottom:1px solid var(--line);vertical-align:middle}
+.um-t tr:last-child td{border-bottom:0}
+.um-u{display:flex;align-items:center;gap:.55rem}
+.um-u .av{flex:none;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:.8rem;background:linear-gradient(135deg,var(--blue-l),var(--blue))}
+.um-u b{display:block}.um-u b small{color:var(--ink2);font-weight:500}
+.um-u span{display:block;font-size:.76rem;color:var(--ink2);text-align:right}
+.um-pill{display:inline-flex;align-items:center;gap:.25rem;font-size:.72rem;font-weight:700;border-radius:99px;padding:.15rem .55rem;background:color-mix(in srgb,var(--ink2) 12%,transparent);color:var(--ink2);white-space:nowrap}
+.um-pill svg{width:12px;height:12px}
+.um-pill.adm{background:color-mix(in srgb,var(--blue) 12%,transparent);color:var(--blue)}
+.um-pill.ok{background:color-mix(in srgb,var(--ok) 13%,transparent);color:var(--ok)}
+.um-pill.wait{background:color-mix(in srgb,#e0962a 15%,transparent);color:#b5701a}
+.um-pill.off{background:color-mix(in srgb,var(--bad) 12%,transparent);color:var(--bad)}
+.um-nv{display:block;font-size:.68rem;color:#b5701a;margin-top:.2rem}
+.um-prog{display:flex;align-items:center;gap:.5rem;min-width:120px}
+.um-prog .bar{flex:1;height:7px;border-radius:9px;background:var(--line);overflow:hidden}
+.um-prog .bar i{display:block;height:100%;background:linear-gradient(90deg,var(--cu),var(--cu-l))}
+.um-prog b{font-size:.78rem}
+.um-sub{color:var(--ink2);font-size:.7rem}
+.um-act{display:flex;flex-wrap:wrap;gap:.3rem}
+.um-act .btn{padding:.3rem .55rem;font-size:.74rem}
+.um-act .btn svg{width:14px;height:14px}
+.um-empty{text-align:center;color:var(--ink2);padding:1.6rem!important}
+@media(max-width:860px){.um-stats{grid-template-columns:repeat(3,1fr)}.um-modes{grid-template-columns:1fr}}
+@media(max-width:520px){.um-stats{grid-template-columns:repeat(2,1fr)}.um-q{max-width:none}}
 .modal.brand-modal{max-height:calc(100vh - 2rem);overflow-x:hidden;overflow-y:auto;scrollbar-width:thin}
 #brand-scene .fallback{width:130px;height:130px}
 /* ===== جداول کاربردی ===== */
@@ -20749,11 +20834,16 @@ function initShell(){
 
 /* ===== حالت مدیر: بخش مدیریت محتوا فقط پس از ورود با رمز دیده می‌شود ===== */
 const ED_FLAG='cu-editor-session',ED_PW='cu-editor-pw';
-const isEditor=()=>{try{return sessionStorage.getItem(ED_FLAG)==='1'}catch(e){return false}};
+/* در حالت آنلاین (ورود با حساب سرور) نقش admin سرور تعیین‌کننده است و رمز محلی کاربرد ندارد؛
+   window.caRole در بخش احراز هویت (انتهای فایل) تعریف می‌شود */
+const caOnline=()=>!!(window.caRole&&window.caRole.online());
+const caAdmin=()=>!!(window.caRole&&window.caRole.admin());
+const isEditor=()=>{if(caOnline())return caAdmin();try{return sessionStorage.getItem(ED_FLAG)==='1'}catch(e){return false}};
 function edHash(s){let h1=0xdeadbeef,h2=0x41c6ce57;for(let i=0;i<s.length;i++){const c=s.charCodeAt(i);h1=Math.imul(h1^c,2654435761);h2=Math.imul(h2^c,1597334677)}
   h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909);h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909);
   return (4294967296*(2097151&h2)+(h1>>>0)).toString(36)}
 function editorUnlock(after){
+  if(caOnline()){if(caAdmin()){if(after)after();else route()}else toast('بخش مدیریت فقط برای مدیر سامانه است');return}
   let saved=null;try{saved=localStorage.getItem(ED_PW)}catch(e){}
   const first=!saved;
   modal(first?'تعیین رمز مدیر':'ورود مدیر',
@@ -20774,23 +20864,26 @@ const MENU=[
   ['آموزش',[['home','خانه','home'],['topics','سرفصل‌های آموزشی','book'],['process','مسیر فرایند مس','flow'],['tools','کارگاه فرایند','lab']]],
   ['پیوست‌ها',[['tables','جداول کاربردی','table'],['glossary','واژه‌نامه','glossary'],['sources','منابع','library']]],
   ['من',[['progress','پیشرفت من','chart']]],
-  ['مدیریت',[['admin','مدیریت محتوا','settings']]]
+  ['مدیریت',[['admin','مدیریت محتوا','settings'],['users','مدیریت کاربران','people']]]
 ];
-const menuData=()=>isEditor()?MENU:MENU.filter(g=>g[0]!=='مدیریت');
+const menuData=()=>(isEditor()?MENU:MENU.filter(g=>g[0]!=='مدیریت')).map(([g,it])=>[g,it.filter(x=>x[0]!=='users'||caAdmin())]);
 function renderMenu(route){
   $('#sb-menu').innerHTML=menuData().map(([g,items])=>`<div class="sb-label">${g}</div>`+items.map(([r,l,i])=>{
     const badge=r==='topics'&&DB.topics.length?`<em>${fa(DB.topics.length)}</em>`:'';
-    return `<a class="sb-item ${route===r?'active':''}" href="#/${r}" title="${l}">${ic(i)}<span>${l}</span>${badge}</a>`}).join('')).join('')+`<a class="sb-item sb-lock" href="javascript:void 0" id="sb-lock">${ic('lock')}<span>${isEditor()?'خروج از حالت مدیر':'ورود مدیر'}</span></a>`;
-  $('#sb-lock').onclick=()=>isEditor()?editorLock():editorUnlock();
+    return `<a class="sb-item ${route===r?'active':''}" href="#/${r}" title="${l}">${ic(i)}<span>${l}</span>${badge}</a>`}).join('')).join('')+(caOnline()?'':`<a class="sb-item sb-lock" href="javascript:void 0" id="sb-lock">${ic('lock')}<span>${isEditor()?'خروج از حالت مدیر':'ورود مدیر'}</span></a>`);
+  const lk=$('#sb-lock');if(lk)lk.onclick=()=>isEditor()?editorLock():editorUnlock();
 }
 function setTitle(t,c){$('#pg-title').textContent=t;$('#pg-crumb').textContent=c||'';document.title=t+' — مس‌آموز'}
 function route(){
   const h=location.hash.replace(/^#\/?/,'')||'home';const [r,a,b]=h.split('/');
   document.body.classList.remove('sb-open');
+  /* تا بخش احراز هویت بارگذاری نشده، صفحه‌های مدیریتی رسم نمی‌شوند (پس از آن route دوباره اجرا می‌شود) */
+  if((r==='admin'||r==='users')&&!window.caRole)return;
+  if(r==='users'&&!caAdmin()){location.hash='#/home';toast('مدیریت کاربران فقط برای مدیر سامانه در حالت آنلاین است');return}
   if(r==='admin'&&!isEditor()){location.hash='#/home';editorUnlock(()=>{location.hash='#/admin'});return}
   renderMenu(['topic','lesson'].includes(r)?'topics':r);
   const v=$('#view');v.className='content fade';void v.offsetWidth;
-  ({home:vHome,topics:vTopics,topic:()=>vTopic(a),lesson:()=>vLesson(a,b),process:vProcess,glossary:vGlossary,progress:vProgress,admin:vAdmin,tools:()=>vTools(a,b),search:()=>vSearch(decodeURIComponent(a||'')),tables:()=>vTables(a?decodeURIComponent(a):null),sources:vSources}[r]||vHome)();
+  ({home:vHome,topics:vTopics,topic:()=>vTopic(a),lesson:()=>vLesson(a,b),process:vProcess,glossary:vGlossary,progress:vProgress,admin:vAdmin,users:()=>window.vUsers?vUsers():vHome(),tools:()=>vTools(a,b),search:()=>vSearch(decodeURIComponent(a||'')),tables:()=>vTables(a?decodeURIComponent(a):null),sources:vSources}[r]||vHome)();
   mountLogos();mountWidgets($('#view'));window.scrollTo(0,0);renderStatusBar();
 }
 window.addEventListener('hashchange',route);
@@ -21449,7 +21542,7 @@ function drawInstall(){
   const android=apk+`${PWA.prompt?`<button type="button" class="btn btn-cu in-go" id="in-go">${ic('download')} نصب مستقیم مس‌آموز</button><p class="in-or">یا به‌صورت دستی:</p>`:''}
     ${instSteps([['search','سامانه را در مرورگر Chrome باز کنید','در سامسونگ اینترنت و Edge هم مراحل مشابه است.'],['dots','منوی ⋮ بالای مرورگر را بزنید',''],['addsq','«نصب برنامه» یا «افزودن به صفحهٔ اصلی» را انتخاب کنید','در نسخه‌های انگلیسی: Install app یا Add to Home screen'],['check','گزینهٔ «نصب» را تأیید کنید','آیکون مس‌آموز کنار سایر برنامه‌ها قرار می‌گیرد.']])}`;
   const ios=`${instSteps([['search','سامانه را در مرورگر Safari باز کنید','در iOS ۱۶٫۴ به بعد، Chrome و Edge هم از منوی اشتراک همین گزینه را دارند.'],['share','دکمهٔ اشتراک‌گذاری را بزنید','مربع با فلش رو به بالا، در نوار پایین (آیفون) یا بالا (آیپد).'],['addsq','«Add to Home Screen» را انتخاب کنید','در فهرست به پایین بروید تا این گزینه را ببینید.'],['check','در بالای صفحه «Add» را بزنید','مس‌آموز مانند یک برنامه از صفحهٔ اصلی و تمام‌صفحه باز می‌شود.']])}
-    <p class="in-note">${ic('lock',14)} برنامهٔ نصب‌شده در iOS حافظهٔ جداگانه‌ای از Safari دارد؛ پس از نصب یک بار دیگر با شمارهٔ همراه وارد شوید تا پیشرفتتان از سرور همگام شود.</p>`;
+    <p class="in-note">${ic('lock',14)} برنامهٔ نصب‌شده در iOS حافظهٔ جداگانه‌ای از Safari دارد؛ پس از نصب یک بار دیگر با ایمیل و رمز عبور وارد شوید تا پیشرفتتان از سرور همگام شود.</p>`;
   box.innerHTML=`<div class="in-head"><img src="${$('#app-logo img').src}" alt=""><div><h3>نصب اپلیکیشن مس‌آموز</h3><p>دسترسی سریع از صفحهٔ اصلی گوشی، اجرای تمام‌صفحه و کار آفلاین</p></div><button class="x-btn" id="in-x" aria-label="بستن">${ic('x',16)}</button></div>
    <div class="in-body">${warn}
     <div class="tb-seg in-tabs" role="tablist"><button role="tab" data-it="android" class="${instTab==='android'?'on':''}" aria-selected="${instTab==='android'}">${ic('phone',15)} اندروید</button><button role="tab" data-it="ios" class="${instTab==='ios'?'on':''}" aria-selected="${instTab==='ios'}">${ic('phone',15)} آیفون و آیپد (iOS)</button></div>
@@ -21601,12 +21694,19 @@ applyTheme();route();
 </script>
 <script>
 /* ================================================================
-   ورود کاربر با شمارهٔ همراه + همگام‌سازی پیشرفت + بروزرسانی نسخه
+   ورود کاربر با ایمیل و رمز عبور + همگام‌سازی پیشرفت + بروزرسانی نسخه + مدیریت کاربران
    ----------------------------------------------------------------
    CA_CONFIG.api      : نشانی سرور API ('' = همان دامنهٔ سایت). روی فایل محلی null است.
    CA_CONFIG.siteUrl  : نشانی سایت برای بررسی نسخهٔ جدید وقتی برنامه به‌صورت فایل اجرا می‌شود.
+   پیوندهای ایمیل:    #/verify?token=…  و  #/reset?token=…
    ================================================================ */
 ICONS.refresh='<path d="M21 12a9 9 0 1 1-2.64-6.36"/><path d="M21 4v5h-5"/>';
+ICONS.eye='<path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/>';
+ICONS.eyeOff='<path d="M3 3l18 18"/><path d="M10.6 5.1A10.8 10.8 0 0 1 12 5c6.4 0 10 7 10 7a17.6 17.6 0 0 1-3.2 4.2"/><path d="M6.6 6.6C3.9 8.4 2 12 2 12s3.6 7 10 7a9.9 9.9 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/>';
+ICONS.mail='<rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6 8.5-6"/>';
+ICONS.key='<circle cx="8" cy="15" r="4"/><path d="M11 12l9-9M17 6l3 3M15 8l2 2"/>';
+ICONS.logout='<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="M10 17l-5-5 5-5M5 12h11"/>';
+ICONS.shield='<path d="M12 3l8 3v6c0 4.5-3.4 8.3-8 9-4.6-.7-8-4.5-8-9V6z"/><path d="M9 12l2 2 4-4"/>';
 const APP_VERSION=(document.querySelector('meta[name="app-version"]')||{}).content||'0';
 /* ---------- اپلیکیشن اندروید (پل CAApp) ---------- */
 const IN_APP=!!window.CAApp;
@@ -21626,11 +21726,14 @@ window.caBack=()=>{const q=s=>document.querySelector(s);
   if(q('#ca-install.open')){closeInstall();return true}
   if(q('#modal.open')){q('#modal').classList.remove('open');return true}
   if(q('#brand.open')){closeBrand();return true}
+  if(q('.u-pop')){closeUserPop();return true}
+  if(q('#ca-login')&&!q('#ca-login').hidden&&AUTH){hideLogin();return true}
+  if(q('#ca-login')&&!q('#ca-login').hidden&&['register','forgot','resend'].includes(LG.mode)){lgMode('login');return true}
   if(document.body.classList.contains('sb-open')){document.body.classList.remove('sb-open');return true}
   return false};
 const CA_CONFIG=Object.assign({
   api:/^https?:$/.test(location.protocol)?'':null,
-  siteUrl:'',
+  siteUrl:'https://mesamoz.ir',
   checkEveryMin:30
 },window.CA_CONFIG||{},(IN_APP&&location.protocol==='file:')?(()=>{try{return JSON.parse(CAApp.config())}catch(e){return {}}})():{});
 
@@ -21638,9 +21741,12 @@ const CA_CONFIG=Object.assign({
 const lsGet=(k,j)=>{try{const v=localStorage.getItem(k);return j?(v?JSON.parse(v):null):v}catch(e){return null}};
 const lsSet=(k,v)=>{try{if(v==null)localStorage.removeItem(k);else localStorage.setItem(k,typeof v==='string'?v:JSON.stringify(v))}catch(e){}};
 const normDigits=s=>String(s||'').replace(/[۰-۹]/g,d=>'۰۱۲۳۴۵۶۷۸۹'.indexOf(d)).replace(/[٠-٩]/g,d=>'٠١٢٣٤٥٦٧٨٩'.indexOf(d));
-function normPhone(s){let p=normDigits(s).replace(/[^\d+]/g,'');p=p.replace(/^(\+98|0098|98)(?=9\d{9}$)/,'0');if(/^9\d{9}$/.test(p))p='0'+p;return /^09\d{9}$/.test(p)?p:null}
-const maskPhone=p=>p?p.slice(0,4)+'***'+p.slice(-4):'';
+const normEmail=s=>normDigits(s).replace(/[\s‌‏‎]/g,'').toLowerCase();
+const validEmail=e=>e.length<=254&&/^[^\s@]+@[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?(?:\.[a-z0-9](?:[a-z0-9-]{0,61}[a-z0-9])?)*\.[a-z]{2,}$/.test(e);
 const verCmp=(a,b)=>{const x=String(a).split('.').map(Number),y=String(b).split('.').map(Number);for(let i=0;i<Math.max(x.length,y.length);i++){const d=(x[i]||0)-(y[i]||0);if(d)return d>0?1:-1}return 0};
+const PW_MIN=8;
+const ltrSpan=s=>`<b dir="ltr" style="unicode-bidi:isolate">${esc(s)}</b>`;
+const faDateTime=ms=>{if(!ms)return '—';try{const d=new Date(+ms);return d.toLocaleDateString('fa-IR',{year:'numeric',month:'long',day:'numeric'})+'، '+d.toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'})}catch(e){return '—'}};
 
 /* ---------- تقویم جلالی ---------- */
 const JM=['فروردین','اردیبهشت','خرداد','تیر','مرداد','شهریور','مهر','آبان','آذر','دی','بهمن','اسفند'];
@@ -21655,54 +21761,76 @@ function jTodayText(){const d=new Date(),[y,m,dd]=jToday();return `${JWD[d.getDa
 
 /* ================= احراز هویت ================= */
 const AUTH_KEY='cu-auth';
-let AUTH=lsGet(AUTH_KEY,true);           /* {phone,name,token,mode:'cloud'|'local',at} */
+let AUTH=lsGet(AUTH_KEY,true);           /* {email,name,role,token,mode:'cloud'|'local',at} */
+if(AUTH&&!AUTH.email){AUTH=null;lsSet(AUTH_KEY,null)}   /* نشست قدیمی شماره‌همراهی */
 let SERVER_OK=null;                       /* null=نامعلوم */
+let SERVER_INFO={registration:{mode:'open',domains:[]}};
 let SYNC={state:'idle',at:lsGet('cu-sync-at')||null,sig:null,timer:null};
-const isCloud=()=>AUTH&&AUTH.mode==='cloud'&&AUTH.token;
+const isCloud=()=>!!(AUTH&&AUTH.mode==='cloud'&&AUTH.token);
+/* نقش کاربر برای بخش مدیریت (در بخش اصلی برنامه استفاده می‌شود) */
+window.caRole={online:()=>isCloud(),admin:()=>isCloud()&&AUTH.role==='admin'};
 
 async function api(path,opt={}){
-  if(CA_CONFIG.api==null)throw new Error('offline');
-  const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),opt.timeout||9000);
-  const h={'Content-Type':'application/json'};if(AUTH&&AUTH.token)h.Authorization='Bearer '+AUTH.token;
-  try{
-    const r=await fetch(CA_CONFIG.api+path,{method:opt.method||'GET',headers:h,body:opt.body?JSON.stringify(opt.body):undefined,signal:ctl.signal,cache:'no-store'});
-    let j={};try{j=await r.json()}catch(e){}
-    if(!r.ok){const e=new Error(j.error||('خطای سرور '+r.status));e.status=r.status;throw e}
-    return j;
-  }finally{clearTimeout(t)}
+  if(CA_CONFIG.api==null){const e=new Error('سرور در دسترس نیست (حالت آفلاین).');e.net=true;throw e}
+  const ctl=new AbortController(),t=setTimeout(()=>ctl.abort(),opt.timeout||12000);
+  const h={};if(opt.body)h['Content-Type']='application/json';if(AUTH&&AUTH.token&&!opt.noAuth)h.Authorization='Bearer '+AUTH.token;
+  let r;
+  try{r=await fetch(CA_CONFIG.api+path,{method:opt.method||'GET',headers:h,body:opt.body?JSON.stringify(opt.body):undefined,signal:ctl.signal,cache:'no-store'})}
+  catch(e){const x=new Error(e.name==='AbortError'?'پاسخی از سرور نرسید؛ دوباره تلاش کنید.':'ارتباط با سرور برقرار نشد؛ اتصال اینترنت را بررسی کنید.');x.net=true;throw x}
+  finally{clearTimeout(t)}
+  if(opt.raw){if(!r.ok){let j={};try{j=await r.json()}catch(e){}const e=new Error(j.error||('خطای سرور '+r.status));e.status=r.status;throw e}return r}
+  let j={};try{j=await r.json()}catch(e){}
+  if(!r.ok){const e=new Error(j.error||(r.status===429?'تعداد درخواست‌ها زیاد است؛ کمی بعد تلاش کنید.':'خطای سرور ('+r.status+')'));e.status=r.status;e.code=j.code;e.data=j;throw e}
+  return j;
 }
 async function probeServer(){
   if(CA_CONFIG.api==null){SERVER_OK=false;return false}
-  try{const j=await api('/api/health',{timeout:4000});SERVER_OK=!!j.ok}catch(e){SERVER_OK=false}
+  try{const j=await api('/api/health',{timeout:5000,noAuth:true});SERVER_OK=!!j.ok;if(j.registration)SERVER_INFO.registration=j.registration}catch(e){SERVER_OK=false}
   return SERVER_OK;
 }
 
-/* پیشرفت هر کاربر جدا نگه داشته می‌شود تا چند نفر بتوانند از یک مرورگر استفاده کنند */
+/* پیشرفت هر کاربر جدا نگه داشته می‌شود تا چند نفر بتوانند از یک مرورگر استفاده کنند (کلید: ایمیل) */
 const progSnapshot=()=>({progress:DB.progress||{},quizScores:DB.quizScores||{},updatedAt:DB.progUpdatedAt||0});
 function applyProg(p){DB.progress=p&&p.progress||{};DB.quizScores=p&&p.quizScores||{};DB.progUpdatedAt=p&&p.updatedAt||0;SYNC.sig=progSig()}
 const progSig=()=>JSON.stringify([DB.progress,DB.quizScores]);
 const hasProg=()=>Object.keys(DB.progress||{}).length||Object.keys(DB.quizScores||{}).length;
+const progKey=email=>'cu-prog:'+email;
 
 async function finishLogin(user){
-  AUTH=user;lsSet(AUTH_KEY,AUTH);
+  AUTH=user;lsSet(AUTH_KEY,AUTH);lsSet('cu-last-email',user.email);
   /* پیشرفت محلی همین کاربر یا پیشرفت بی‌صاحب همین مرورگر */
-  if(DB.owner&&DB.owner!==user.phone)lsSet('cu-prog:'+DB.owner,progSnapshot()),applyProg(lsGet('cu-prog:'+user.phone,true));
-  else if(!DB.owner){const st=lsGet('cu-prog:'+user.phone,true);if(st&&!hasProg())applyProg(st)}
-  DB.owner=user.phone;rawSave();
+  if(DB.owner&&DB.owner!==user.email)lsSet(progKey(DB.owner),progSnapshot()),applyProg(lsGet(progKey(user.email),true));
+  else if(!DB.owner){const st=lsGet(progKey(user.email),true);if(st&&!hasProg())applyProg(st)}
+  DB.owner=user.email;rawSave();
   if(isCloud())await pullProgress(true);
   hideLogin();renderUserUi();route();
   toast(`${user.name||'کاربر'} گرامی، خوش آمدید`);
 }
-function logout(){
-  if(!confirm('از حساب کاربری خارج می‌شوید؟ پیشرفت شما'+(isCloud()?' روی سرور':' در همین مرورگر')+' محفوظ می‌ماند.'))return;
-  if(isCloud()&&SYNC.state==='dirty')pushProgress();
-  if(isCloud())api('/api/logout',{method:'POST'}).catch(()=>{});
-  if(AUTH)lsSet('cu-prog:'+AUTH.phone,progSnapshot());
+function clearAuth(){
+  if(AUTH)lsSet(progKey(AUTH.email),progSnapshot());
   applyProg(null);DB.owner=null;rawSave();
-  AUTH=null;lsSet(AUTH_KEY,null);closeUserPop();renderUserUi();showLogin();
+  AUTH=null;lsSet(AUTH_KEY,null);closeUserPop();renderUserUi();
+}
+function logout(quiet){
+  if(!quiet&&!confirm('از حساب کاربری خارج می‌شوید؟ پیشرفت شما'+(isCloud()?' روی سرور':' در همین مرورگر')+' محفوظ می‌ماند.'))return;
+  if(isCloud()&&SYNC.state==='dirty')pushProgress(true);
+  if(isCloud())api('/api/logout',{method:'POST'}).catch(()=>{});
+  clearAuth();route();showLogin();
+}
+function expired(msg){
+  if(!AUTH)return;
+  toast(msg||'نشست شما منقضی شده؛ دوباره وارد شوید');
+  const em=AUTH.email;clearAuth();LG.email=em;route();showLogin();
+}
+/* به‌روزرسانی نام و نقش از سرور (مثلاً پس از تغییر نقش توسط مدیر) */
+async function refreshMe(){
+  if(!isCloud())return;
+  try{const r=await api('/api/me');const u=r.user;const ch=u.role!==AUTH.role;
+    Object.assign(AUTH,{name:u.name,role:u.role});lsSet(AUTH_KEY,AUTH);renderUserUi();if(ch)route()}
+  catch(e){if(e.status===401)expired()}
 }
 
-/* ---------- همگام‌سازی ---------- */
+/* ---------- همگام‌سازی (آخرین-نوشتن-برنده) ---------- */
 async function pullProgress(onLogin){
   if(!isCloud())return;
   setSync('wait');
@@ -21721,13 +21849,13 @@ async function pushProgress(now){
   const run=async()=>{
     if(!DB.progUpdatedAt&&hasProg()){DB.progUpdatedAt=Date.now();rawSave()}
     setSync('wait');
-    try{await api('/api/progress',{method:'PUT',body:progSnapshot()});setSync('ok')}
+    const L=allLessons();
+    try{await api('/api/progress',{method:'PUT',body:Object.assign(progSnapshot(),{stats:{done:L.filter(l=>DB.progress[l.id]).length,total:L.length}})});setSync('ok')}
     catch(e){if(e.status===401)return expired();if(e.status===409)return pullProgress();setSync('dirty')}
   };
   if(now)return run();SYNC.timer=setTimeout(run,1500);
 }
 function setSync(st){SYNC.state=st;if(st==='ok'){SYNC.at=Date.now();lsSet('cu-sync-at',String(SYNC.at))}renderUserUi()}
-function expired(){toast('نشست شما منقضی شده؛ دوباره وارد شوید');lsSet('cu-prog:'+AUTH.phone,progSnapshot());AUTH=null;lsSet(AUTH_KEY,null);showLogin()}
 
 /* ذخیرهٔ اصلی برنامه را می‌پوشانیم تا تغییر پیشرفت به سرور فرستاده شود */
 const rawSave=save;
@@ -21735,7 +21863,7 @@ save=function(){
   const sig=progSig();
   if(SYNC.sig!==null&&sig!==SYNC.sig)DB.progUpdatedAt=Date.now();
   SYNC.sig=sig;const ok=rawSave();
-  if(AUTH)lsSet('cu-prog:'+AUTH.phone,progSnapshot());
+  if(AUTH)lsSet(progKey(AUTH.email),progSnapshot());
   if(isCloud()&&DB.progUpdatedAt&&SYNC.lastPushed!==DB.progUpdatedAt){SYNC.lastPushed=DB.progUpdatedAt;SYNC.state='dirty';pushProgress()}
   return ok;
 };
@@ -21743,94 +21871,174 @@ SYNC.sig=progSig();
 window.addEventListener('online',()=>{if(SYNC.state==='dirty'||SYNC.state==='err')pushProgress(true)});
 document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible'){if(isCloud())pullProgress();checkUpdate(false)}});
 
-/* ================= صفحهٔ ورود ================= */
-let LG={step:'phone',phone:'',isNew:false,timer:null,left:0,cal:null,clock:null};
-function showLogin(){
-  const el=$('#ca-login');el.hidden=false;document.body.style.overflow='hidden';
-  LG.step='phone';renderLogin();renderLoginCal();
-  if(SERVER_OK===null)probeServer().then(()=>{if(LG.step==='phone')renderLogin()});
+/* ================= صفحهٔ ورود: ورود / ثبت‌نام / بازیابی رمز / تعیین رمز جدید ================= */
+let LG={mode:'login',email:'',token:null,note:null,cal:null,clock:null,busy:false,resetOk:false};
+function showLogin(mode){
+  const el=$('#ca-login');el.hidden=false;document.body.style.overflow='hidden';LG.busy=false;
+  if(mode)LG.mode=mode;else if(!['login','register','forgot','resend','local'].includes(LG.mode))LG.mode='login';
+  renderLogin();renderLoginCal();
+  if(SERVER_OK===null)probeServer().then(()=>{if(!$('#ca-login').hidden&&!LG.busy)renderLogin()});
 }
-function hideLogin(){const el=$('#ca-login');el.hidden=true;document.body.style.overflow='';clearInterval(LG.timer);clearInterval(LG.clock);LG.clock=null}
+function hideLogin(){const el=$('#ca-login');el.hidden=true;document.body.style.overflow='';clearInterval(LG.clock);LG.clock=null}
+function lgMode(m,note){LG.busy=false;LG.mode=m;LG.note=note||null;renderLogin()}
+const lgEmailVal=()=>{const e=$('#lg-email');return e?normEmail(e.value):LG.email};
+
+/* نشانگر قدرت رمز */
+function pwScore(p){
+  if(!p)return -1;
+  if(/^(?:12345678|123456789|1234567890|password|qwertyui|11111111|00000000|87654321|iloveyou|12341234)/i.test(p)||/^(.)\1+$/.test(p))return 0;
+  let s=0;if(p.length>=PW_MIN)s++;if(p.length>=12)s++;if(/[a-z]/.test(p)&&/[A-Z]/.test(p))s++;if(/\d/.test(p)&&/\D/.test(p))s++;if(/[^A-Za-z0-9]/.test(p))s++;
+  if(p.length<PW_MIN)s=Math.min(s,1);
+  return Math.min(4,s);
+}
+const PW_LV=[['بسیار ضعیف','#d6394a'],['ضعیف','#d6394a'],['متوسط','#e0962a'],['خوب','#1f63b0'],['قوی','#1f9a5c']];
+function pwMeter(id){return `<div class="lg-meter" id="${id}" aria-live="polite"><div class="bars"><i></i><i></i><i></i><i></i></div><span></span></div>`}
+function bindMeter(inp,meter){
+  const m=$('#'+meter),draw=()=>{const sc=pwScore(inp.value),bars=m.querySelectorAll('i'),lv=sc<0?null:PW_LV[sc];
+    bars.forEach((b,i)=>b.style.background=lv&&i<Math.max(1,sc)?lv[1]:'');m.querySelector('span').textContent=lv?('قدرت رمز: '+lv[0]+(inp.value.length<PW_MIN?` — دست‌کم ${fa(PW_MIN)} نویسه`:'')):`دست‌کم ${fa(PW_MIN)} نویسه؛ ترکیب حروف بزرگ و کوچک، رقم و نماد بهتر است`;
+    m.querySelector('span').style.color=lv?lv[1]:''};
+  inp.addEventListener('input',draw);draw();
+}
+function pwField(id,label,ac,extra){
+  return `<div class="lg-field">${label}<div class="lg-pw"><input id="${id}" name="${id==='lg-pass'?'password':id}" type="password" class="lg-in lg-ltr" dir="ltr" autocomplete="${ac}" autocapitalize="none" spellcheck="false" maxlength="128">
+    <button type="button" class="lg-eye" data-eye="${id}" aria-label="نمایش رمز" title="نمایش رمز" aria-pressed="false">${ic('eye',18)}</button></div>${extra||''}<p class="lg-kb" id="${id}-kb" hidden></p></div>`;
+}
+function emailField(ro){
+  return `<div class="lg-field"><label for="lg-email">ایمیل</label><input id="lg-email" name="email" type="email" class="lg-in lg-ltr" dir="ltr" autocomplete="username" inputmode="email" autocapitalize="none" spellcheck="false" maxlength="254" placeholder="name@example.com" value="${esc(LG.email||lsGet('cu-last-email')||'')}"${ro?' readonly':''}></div>`;
+}
+function regHint(){
+  const r=SERVER_INFO.registration||{};
+  if(r.mode==='approval')return '<p class="lg-hint">پس از تأیید ایمیل، حساب شما باید توسط مدیر سامانه تأیید شود.</p>';
+  if(r.mode==='domain')return `<p class="lg-hint">ثبت‌نام فقط با ایمیل سازمانی: ${(r.domains||[]).map(d=>ltrSpan('@'+d)).join('، ')}</p>`;
+  return '';
+}
 function renderLogin(){
-  const box=$('#lg-card');const cloud=SERVER_OK===true;
+  const box=$('#lg-card');const cloud=SERVER_OK===true,offline=SERVER_OK===false;
+  if(offline&&['login','register','forgot','resend'].includes(LG.mode))LG.mode='local';
+  if(cloud&&LG.mode==='local')LG.mode='login';
+  const M=LG.mode;
   const mode=SERVER_OK===null?`<span class="lg-mode"><i></i>در حال بررسی اتصال…</span>`
     :cloud?`<span class="lg-mode"><i></i>همگام‌سازی ابری فعال — ادامهٔ آموزش در هر دستگاه</span>`
     :`<span class="lg-mode local"><i></i>حالت آفلاین — پیشرفت فقط در همین مرورگر</span>`;
-  let form='';
-  if(LG.step==='phone'){
-    form=`<div class="lg-field"><label for="lg-phone">شمارهٔ تلفن همراه</label>
-      <input id="lg-phone" class="lg-in ltr" inputmode="numeric" autocomplete="tel" maxlength="14" placeholder="09xx xxx xxxx" value="${esc(LG.phone||(AUTH&&AUTH.phone)||lsGet('cu-last-phone')||'')}"></div>
-      ${cloud?'':`<div class="lg-field"><label for="lg-name">نام و نام خانوادگی</label><input id="lg-name" class="lg-in" autocomplete="name" value="${esc(lsGet('cu-last-name')||'')}"></div>`}
-      <button class="lg-btn" id="lg-go" type="submit">${cloud?'دریافت کد تأیید':'ورود'}</button>
-      <p class="lg-hint">${cloud?'یک کد ۵ رقمی با پیامک برای شما ارسال می‌شود. نیازی به رمز عبور نیست.':'سرور در دسترس نیست؛ ورود بدون پیامک انجام می‌شود و پیشرفت در همین مرورگر می‌ماند.'}</p>`;
-  }else{
-    form=`<p class="lg-hint" style="text-align:center;margin:0 0 .8rem">کد ارسال‌شده به <b style="display:inline-block;direction:ltr;unicode-bidi:isolate">${maskPhone(LG.phone)}</b> را وارد کنید</p>
-      <div class="lg-field"><input id="lg-code" class="lg-in ltr lg-otp" inputmode="numeric" autocomplete="one-time-code" maxlength="5" placeholder="•••••"></div>
-      ${LG.isNew?`<div class="lg-field"><label for="lg-name">نام و نام خانوادگی (اولین ورود)</label><input id="lg-name" class="lg-in" autocomplete="name"></div>`:''}
-      <button class="lg-btn" id="lg-go" type="submit">تأیید و ورود</button>
-      <div class="lg-row"><button type="button" class="lg-link" id="lg-edit">ویرایش شماره</button><button type="button" class="lg-link" id="lg-resend" disabled></button></div>`;
+  const tabs=['login','register'].includes(M)?`<div class="lg-tabs" role="tablist"><button type="button" role="tab" data-mode="login" class="${M==='login'?'on':''}" aria-selected="${M==='login'}">ورود</button><button type="button" role="tab" data-mode="register" class="${M==='register'?'on':''}" aria-selected="${M==='register'}">ثبت‌نام</button></div>`:'';
+  const back=`<div class="lg-row lg-c"><button type="button" class="lg-link" data-mode="login">بازگشت به ورود</button></div>`;
+  let head='',form='';
+  if(M==='login'){
+    form=emailField()+pwField('lg-pass',`<div class="lg-lbl"><label for="lg-pass">رمز عبور</label><button type="button" class="lg-link sm" data-mode="forgot">فراموشی رمز عبور</button></div>`,'current-password')+
+      `<button class="lg-btn" id="lg-go" type="submit">ورود</button>`;
+  }else if(M==='register'){
+    form=`<div class="lg-field"><label for="lg-name">نام و نام خانوادگی</label><input id="lg-name" name="name" class="lg-in" autocomplete="name" maxlength="80" value="${esc(LG.name||'')}"></div>`+
+      emailField()+pwField('lg-pass','<label for="lg-pass">رمز عبور</label>','new-password',pwMeter('lg-meter'))+
+      pwField('lg-pass2','<label for="lg-pass2">تکرار رمز عبور</label>','new-password')+regHint()+
+      `<button class="lg-btn" id="lg-go" type="submit">ثبت‌نام و دریافت لینک تأیید</button>`;
+  }else if(M==='forgot'||M==='resend'){
+    head=`<h2 class="lg-h2">${M==='forgot'?'بازیابی رمز عبور':'ارسال دوبارهٔ لینک تأیید'}</h2><p class="lg-hint lg-c">${M==='forgot'?'ایمیل حساب خود را وارد کنید تا لینک تعیین رمز جدید (با اعتبار ۳۰ دقیقه) برایتان ارسال شود.':'ایمیلی را که با آن ثبت‌نام کرده‌اید وارد کنید.'}</p>`;
+    form=emailField()+`<button class="lg-btn" id="lg-go" type="submit">${M==='forgot'?'ارسال لینک بازنشانی':'ارسال لینک تأیید'}</button>`+back;
+  }else if(M==='reset'){
+    head=`<h2 class="lg-h2">تعیین رمز جدید</h2>`;
+    form=LG.resetOk===null?`<p class="lg-wait"><span class="lg-spin"></span>در حال بررسی لینک…</p>`
+      :emailField(true)+pwField('lg-pass','<label for="lg-pass">رمز جدید</label>','new-password',pwMeter('lg-meter'))+pwField('lg-pass2','<label for="lg-pass2">تکرار رمز جدید</label>','new-password')+
+      `<button class="lg-btn" id="lg-go" type="submit">ذخیرهٔ رمز جدید</button><p class="lg-hint">پس از تغییر رمز، از همهٔ دستگاه‌ها خارج می‌شوید.</p>`+back;
+  }else if(M==='verify'){
+    head=`<h2 class="lg-h2">تأیید ایمیل</h2>`;form=`<p class="lg-wait"><span class="lg-spin"></span>در حال تأیید ایمیل…</p>`;
+  }else{ /* local */
+    form=`<div class="lg-field"><label for="lg-name">نام و نام خانوادگی</label><input id="lg-name" name="name" class="lg-in" autocomplete="name" maxlength="80" value="${esc(lsGet('cu-last-name')||'')}"></div>`+emailField()+
+      `<button class="lg-btn" id="lg-go" type="submit">ورود</button><p class="lg-hint">سرور در دسترس نیست؛ ورود بدون رمز و فقط روی همین دستگاه انجام می‌شود و پیشرفت در همین مرورگر می‌ماند.</p>`;
   }
+  /* اگر حالت تغییر نکرده (مثلاً فقط وضعیت اتصال عوض شد)، آنچه کاربر تایپ کرده حفظ شود */
+  const keep={};if(LG.drawn===M)box.querySelectorAll('#lg-form input').forEach(i=>{if(!i.readOnly&&i.id)keep[i.id]={v:i.value,t:i.type,f:document.activeElement===i}});
+  LG.drawn=M;
+  const note=LG.note?`<div class="lg-note ${LG.note.t||'info'}" role="${LG.note.t==='err'?'alert':'status'}">${LG.note.h}</div>`:'';
   box.innerHTML=`<div class="lg-logo"><div class="logo-svg" data-logo></div></div>
-    <h1>مس‌آموز</h1><p class="lg-sub">سامانهٔ آموزش فرایند تولید مس</p>${mode}
-    <form class="lg-form" id="lg-form" novalidate>${form}<p class="lg-err" id="lg-err"></p></form>
+    <h1>مس‌آموز</h1><p class="lg-sub">سامانهٔ آموزش فرایند تولید مس</p><p class="lg-org">مجتمع مس شهربابک</p>${mode}
+    ${tabs}${head}${note}
+    <form class="lg-form" id="lg-form" method="post" action="#" novalidate autocomplete="on">${form}<p class="lg-err" id="lg-err" role="alert"></p></form>
+    ${AUTH&&M!=='verify'?`<div class="lg-row lg-c"><button type="button" class="lg-link" id="lg-close">بازگشت به برنامه</button></div>`:''}
     <p class="lg-today">امروز: ${jTodayText()}</p>
-    <div class="lg-foot">مجتمع مس شهربابک<br>طراحی و توسعه: <b>علی معصومی</b> · نسخهٔ ${fa(APP_VERSION)}</div>`;
+    <div class="lg-foot">طراحی و توسعه: <b>علی معصومی</b> · نسخهٔ ${fa(APP_VERSION)}</div>`;
   mountLogos();
-  $('#lg-form').onsubmit=e=>{e.preventDefault();LG.step==='phone'?lgSubmitPhone():lgSubmitCode()};
-  if(LG.step==='code'){
-    $('#lg-edit').onclick=()=>{LG.step='phone';clearInterval(LG.timer);renderLogin()};
-    $('#lg-resend').onclick=()=>lgSendCode(true);
-    const c=$('#lg-code');c.oninput=()=>{c.value=normDigits(c.value).replace(/\D/g,'').slice(0,5);if(c.value.length===5&&!LG.isNew)lgSubmitCode()};
-    tickResend();webOtp();
+  let refocus=null;
+  for(const [id,k] of Object.entries(keep)){const i=document.getElementById(id);if(i&&k.v){i.value=k.v;if(k.t==='text'&&i.type==='password'){i.type='text';const b=box.querySelector(`[data-eye="${id}"]`);if(b){b.innerHTML=ic('eyeOff',18);b.setAttribute('aria-pressed','true')}}}if(i&&k.f)refocus=i}
+  $('#lg-form').onsubmit=e=>{e.preventDefault();lgSubmit()};
+  box.querySelectorAll('[data-mode]').forEach(b=>b.onclick=()=>{const em=lgEmailVal();if(em)LG.email=em;const n=$('#lg-name');if(n&&LG.mode==='register')LG.name=n.value;lgMode(b.dataset.mode)});
+  box.querySelectorAll('[data-eye]').forEach(b=>b.onclick=()=>{const i=$('#'+b.dataset.eye),show=i.type==='password';i.type=show?'text':'password';b.innerHTML=ic(show?'eyeOff':'eye',18);b.setAttribute('aria-pressed',String(show));b.title=b.ariaLabel=show?'پنهان کردن رمز':'نمایش رمز';i.focus()});
+  box.querySelectorAll('.lg-pw input').forEach(i=>{const kb=$('#'+i.id+'-kb');const chk=e=>{const fa_=/[؀-ۿ]/.test(i.value),caps=e&&e.getModifierState&&e.getModifierState('CapsLock');
+    kb.hidden=!(fa_||caps);kb.textContent=fa_?'رمز حروف فارسی دارد؛ زبان صفحه‌کلید را بررسی کنید.':caps?'Caps Lock روشن است.':''};i.addEventListener('keyup',chk);i.addEventListener('input',()=>chk())});
+  const lc=$('#lg-close');if(lc)lc.onclick=()=>{LG.note=null;hideLogin()};
+  if($('#lg-meter'))bindMeter($('#lg-pass'),'lg-meter');
+  const rs=$('#lg-resend');if(rs)rs.onclick=()=>lgResend(rs.dataset.email);
+  if(refocus){refocus.focus();return}
+  if(Object.keys(keep).length)return;
+  setTimeout(()=>{const f=[...document.querySelectorAll('#lg-form input:not([readonly])')].find(i=>!i.value)||$('#lg-form input:not([readonly])');if(f&&!('ontouchstart' in window))f.focus()},60);
+}
+const lgErr=m=>{const e=$('#lg-err');if(e)e.innerHTML=m||''};
+function lgBusy(b,txt){LG.busy=b;const g=$('#lg-go');if(!g)return;if(b){g.dataset.t=g.textContent;g.textContent=txt||'لطفاً صبر کنید…'}else if(g.dataset.t)g.textContent=g.dataset.t;g.disabled=b}
+function devLinkNote(r){return r&&r.devLink?`<br><small>حالت آزمایشی سرور: <a href="${esc(r.devLink)}">باز کردن لینک</a></small>`:''}
+async function lgSubmit(){
+  if(LG.busy)return;
+  const M=LG.mode,em=lgEmailVal(),pw=($('#lg-pass')||{}).value||'',pw2=($('#lg-pass2')||{}).value||'';
+  const nameEl=$('#lg-name'),name=nameEl?nameEl.value.replace(/\s+/g,' ').trim():'';
+  lgErr('');
+  if(M!=='reset'){if(!em)return lgErr('ایمیل را وارد کنید.');if(!validEmail(em))return lgErr('نشانی ایمیل معتبر نیست (نمونه: name@example.com).');LG.email=em}
+  if((M==='register'||M==='local')&&name.length<3)return lgErr('نام و نام خانوادگی را کامل وارد کنید.');
+  if(M==='login'&&!pw)return lgErr('رمز عبور را وارد کنید.');
+  if(M==='register'||M==='reset'){
+    if(pw.length<PW_MIN)return lgErr(`رمز عبور باید دست‌کم ${fa(PW_MIN)} نویسه باشد.`);
+    if(pw.toLowerCase()===(M==='reset'?LG.email:em))return lgErr('رمز عبور نباید با ایمیل یکسان باشد.');
+    if(pw!==pw2)return lgErr('تکرار رمز عبور با رمز یکسان نیست.');
   }
-  setTimeout(()=>{const f=$('#lg-form input');if(f)f.focus()},60);
-}
-const lgErr=m=>{const e=$('#lg-err');if(e)e.textContent=m||''};
-function lgBusy(b,txt){const g=$('#lg-go');if(!g)return;g.disabled=b;if(txt)g.textContent=txt}
-async function lgSubmitPhone(){
-  const phone=normPhone($('#lg-phone').value);
-  if(!phone)return lgErr('شمارهٔ همراه معتبر نیست (نمونه: 09121234567)');
-  LG.phone=phone;lsSet('cu-last-phone',phone);
-  if(SERVER_OK){return lgSendCode(false)}
-  const name=($('#lg-name').value||'').trim();
-  if(name.length<3)return lgErr('نام و نام خانوادگی را وارد کنید');
-  lsSet('cu-last-name',name);
-  finishLogin({phone,name,token:null,mode:'local',at:Date.now()});
-}
-async function lgSendCode(resend){
-  lgErr('');lgBusy(true,'در حال ارسال…');
+  if(M==='local'){lsSet('cu-last-name',name);return finishLogin({email:em,name,role:'learner',token:null,mode:'local',at:Date.now()})}
+  if(SERVER_OK!==true){lgBusy(true,'در حال اتصال…');await probeServer();lgBusy(false);if(!SERVER_OK){renderLogin();return lgErr('ارتباط با سرور برقرار نشد؛ اتصال اینترنت را بررسی کنید.')}}
   try{
-    const r=await api('/api/otp/send',{method:'POST',body:{phone:LG.phone}});
-    LG.isNew=!!r.isNew;LG.left=r.resendIn||120;LG.step='code';renderLogin();
-    if(r.devCode)toast('کد آزمایشی (حالت توسعه): '+r.devCode);
-    else toast(resend?'کد دوباره ارسال شد':'کد تأیید ارسال شد');
-  }catch(e){lgBusy(false,resend?'تأیید و ورود':'دریافت کد تأیید');lgErr(e.message==='offline'||e.name==='AbortError'?'ارتباط با سرور برقرار نشد':e.message)}
+    if(M==='login'){
+      lgBusy(true,'در حال ورود…');
+      const r=await api('/api/auth/login',{method:'POST',body:{email:em,password:pw},noAuth:true});
+      LG.note=null;
+      await finishLogin({email:r.user.email,name:r.user.name,role:r.user.role,token:r.token,mode:'cloud',at:Date.now()});
+    }else if(M==='register'){
+      lgBusy(true,'در حال ثبت‌نام…');
+      const r=await api('/api/auth/register',{method:'POST',body:{name,email:em,password:pw},noAuth:true});
+      LG.name='';
+      lgMode('login',{t:'ok',h:`${ic('mail',16)} ${esc(r.message)}<br><small>ایمیل: ${ltrSpan(em)}</small> · <button type="button" class="lg-link sm" id="lg-resend" data-email="${esc(em)}">ارسال دوباره</button>${devLinkNote(r)}`});
+    }else if(M==='forgot'||M==='resend'){
+      lgBusy(true,'در حال ارسال…');
+      const r=await api(M==='forgot'?'/api/auth/forgot':'/api/auth/resend-verify',{method:'POST',body:{email:em},noAuth:true});
+      lgBusy(false);LG.note={t:'ok',h:`${ic('mail',16)} ${esc(r.message)}${devLinkNote(r)}`};renderLogin();
+    }else if(M==='reset'){
+      lgBusy(true,'در حال ذخیره…');
+      const r=await api('/api/auth/reset',{method:'POST',body:{token:LG.token,password:pw},noAuth:true});
+      LG.token=null;
+      if(AUTH&&AUTH.email===r.email&&isCloud())clearAuth();
+      lgMode('login',{t:'ok',h:esc(r.message)});
+    }
+  }catch(e){
+    lgBusy(false);
+    if(e.code==='unverified')lgErr(`${esc(e.message)}<br><button type="button" class="lg-link" id="lg-rv">ارسال دوبارهٔ لینک تأیید</button>`),($('#lg-rv').onclick=()=>lgResend(em));
+    else if(e.code==='locked')lgErr(`${esc(e.message)}<br><button type="button" class="lg-link" id="lg-fg">بازیابی رمز عبور</button>`),($('#lg-fg').onclick=()=>lgMode('forgot'));
+    else if(e.code==='bad_token'){LG.token=null;lgMode('forgot',{t:'err',h:esc(e.message)})}
+    else lgErr(esc(e.message));
+  }
 }
-async function lgSubmitCode(){
-  const code=normDigits($('#lg-code').value).replace(/\D/g,'');
-  if(code.length!==5)return lgErr('کد ۵ رقمی را کامل وارد کنید');
-  const nameEl=$('#lg-name'),name=nameEl?nameEl.value.trim():'';
-  if(LG.isNew&&name.length<3)return lgErr('نام و نام خانوادگی را وارد کنید');
-  lgErr('');lgBusy(true,'در حال بررسی…');
-  try{
-    const r=await api('/api/otp/verify',{method:'POST',body:{phone:LG.phone,code,name}});
-    clearInterval(LG.timer);
-    await finishLogin({phone:r.user.phone,name:r.user.name,token:r.token,mode:'cloud',at:Date.now()});
-  }catch(e){lgBusy(false,'تأیید و ورود');lgErr(e.message)}
+async function lgResend(email){
+  try{const r=await api('/api/auth/resend-verify',{method:'POST',body:{email},noAuth:true});LG.email=email;lgMode('login',{t:'ok',h:`${ic('mail',16)} ${esc(r.message)}${devLinkNote(r)}`})}
+  catch(e){lgErr(esc(e.message))}
 }
-function tickResend(){
-  clearInterval(LG.timer);const b=$('#lg-resend');
-  const draw=()=>{if(!b.isConnected)return clearInterval(LG.timer);
-    if(LG.left>0){b.disabled=true;b.textContent=`ارسال مجدد تا ${fa(Math.floor(LG.left/60))}:${fa(String(LG.left%60).padStart(2,'0'))}`;LG.left--}
-    else{b.disabled=false;b.textContent='ارسال مجدد کد';clearInterval(LG.timer)}};
-  draw();LG.timer=setInterval(draw,1000);
+/* پیوندهای ایمیل: #/verify?token=… و #/reset?token=… */
+function authLink(){const m=location.hash.match(/^#\/(verify|reset)\?(?:.*&)?token=([A-Za-z0-9_-]{20,100})/);return m?{kind:m[1],token:m[2]}:null}
+async function handleAuthLink(l){
+  history.replaceState(null,'',location.pathname+location.search+'#/home');   /* توکن در تاریخچهٔ مرورگر نماند */
+  if(CA_CONFIG.api==null){showLogin();return}
+  if(l.kind==='reset'){
+    LG.token=l.token;LG.resetOk=null;LG.note=null;showLogin('reset');
+    try{const r=await api('/api/auth/reset-check?token='+encodeURIComponent(l.token),{noAuth:true});LG.email=r.email;LG.resetOk=true;if(LG.mode==='reset')renderLogin()}
+    catch(e){LG.token=null;lgMode(e.net?'login':'forgot',{t:'err',h:esc(e.message)})}
+  }else{
+    LG.note=null;showLogin('verify');
+    try{const r=await api('/api/auth/verify',{method:'POST',body:{token:l.token},noAuth:true});LG.email=r.email;lgMode('login',{t:'ok',h:`${ic('check',16)} ${esc(r.message)}`})}
+    catch(e){lgMode(e.net?'login':'resend',{t:'err',h:esc(e.message)})}
+  }
 }
-/* خواندن خودکار کد از پیامک در کروم اندروید (WebOTP) — پیامک باید با خط «@دامنه #کد» تمام شود */
-function webOtp(){
-  if(!('OTPCredential' in window))return;
-  const ac=new AbortController();setTimeout(()=>ac.abort(),120000);
-  navigator.credentials.get({otp:{transport:['sms']},signal:ac.signal}).then(o=>{const c=$('#lg-code');if(o&&c){c.value=o.code;c.dispatchEvent(new Event('input'))}}).catch(()=>{});
-}
+window.addEventListener('hashchange',()=>{const l=authLink();if(l)handleAuthLink(l)});
 
 /* تقویم کنار صفحهٔ ورود (از سپام) */
 function renderLoginCal(){
@@ -21858,30 +22066,137 @@ function syncLabel(){
 function syncCls(){return !isCloud()?'':({ok:'ok',idle:'ok',wait:'wait',dirty:'wait',err:'err'}[SYNC.state])}
 function renderUserUi(){
   const chip=$('#user-chip');
-  if(chip){chip.hidden=!AUTH;if(AUTH)chip.innerHTML=`<span class="sy ${syncCls()}" title="${syncLabel()}"></span><span class="nm">${esc(AUTH.name||maskPhone(AUTH.phone))}</span><span class="av">${esc(initial(AUTH.name))}</span>`}
+  if(chip){chip.hidden=!AUTH;if(AUTH)chip.innerHTML=`<span class="sy ${syncCls()}" title="${syncLabel()}"></span><span class="nm">${esc(AUTH.name||AUTH.email)}</span><span class="av">${esc(initial(AUTH.name))}</span>`}
   const su=$('#sb-user');
-  if(su)su.innerHTML=AUTH?`<span class="av">${esc(initial(AUTH.name))}</span><div><b>${esc(AUTH.name||'کاربر')}</b><span>${syncLabel()}</span></div>`:'';
+  if(su)su.innerHTML=AUTH?`<span class="av">${esc(initial(AUTH.name))}</span><div><b>${esc(AUTH.name||'کاربر')}</b><span>${caRole.admin()?'مدیر سامانه · ':''}${syncLabel()}</span></div>`:'';
   if($('.u-pop'))openUserPop(true);
   renderStatusBar&&$('#status-bar')&&$('#status-bar').classList.contains('show')&&renderStatusBar();
 }
 function closeUserPop(){const p=$('.u-pop');if(p)p.remove()}
 function openUserPop(refresh){
   let p=$('.u-pop');if(p&&!refresh){p.remove();return}
+  if(!AUTH){if(p)p.remove();return}
   if(!p){p=document.createElement('div');p.className='u-pop';document.body.appendChild(p)}
-  const r=$('#user-chip').getBoundingClientRect();p.style.top=(r.bottom+8)+'px';p.style.left=Math.max(8,r.left)+'px';
+  const r=$('#user-chip').getBoundingClientRect();p.style.top=(r.bottom+8)+'px';p.style.left=Math.max(8,Math.min(r.left,innerWidth-298))+'px';
   const L=allLessons(),done=L.filter(l=>DB.progress[l.id]).length,pc=totalProg();
   const at=SYNC.at?new Date(+SYNC.at).toLocaleTimeString('fa-IR',{hour:'2-digit',minute:'2-digit'}):'—';
-  p.innerHTML=`<h4>${esc(AUTH.name||'کاربر')}</h4><div class="ph">${esc(AUTH.phone)}</div>
+  p.innerHTML=`<h4>${esc(AUTH.name||'کاربر')}${caRole.admin()?` <span class="u-role">${ic('shield',13)} مدیر سامانه</span>`:''}</h4><div class="ph" dir="ltr">${esc(AUTH.email)}</div>
     <div class="u-prog"><div class="bar"><i style="width:${pc}%"></i></div><b>${fa(pc)}٪</b></div>
     <div class="u-row"><span>درس‌های گذرانده</span><b>${fa(done)} از ${fa(L.length)}</b></div>
     <div class="u-row"><span>${syncLabel()}</span><span>${isCloud()?'آخرین همگام‌سازی '+at:''}</span></div>
     <div class="u-row"><label for="u-auto">بروزرسانی خودکار نسخه</label><input type="checkbox" id="u-auto" ${autoUpdate()?'checked':''}></div>
-    <div class="u-act">${isCloud()?`<button class="btn btn-ghost" id="u-sync">همگام‌سازی</button>`:''}<button class="btn btn-ghost" id="u-out">خروج</button></div>`;
+    ${isCloud()?`<button class="u-line" id="u-pw">${ic('key',16)} تغییر رمز عبور</button>`:(SERVER_OK?`<button class="u-line" id="u-online">${ic('mail',16)} ورود با حساب کاربری (همگام‌سازی ابری)</button>`:'')}
+    ${caRole.admin()?`<button class="u-line" id="u-users">${ic('people',16)} مدیریت کاربران</button>`:''}
+    <div class="u-act">${isCloud()?`<button class="btn btn-ghost" id="u-sync">${ic('refresh',15)} همگام‌سازی</button>`:''}<button class="btn btn-ghost" id="u-out">${ic('logout',15)} خروج</button></div>`;
   p.querySelector('#u-auto').onchange=e=>{lsSet('cu-auto-update',e.target.checked?'1':'0');toast(e.target.checked?'بروزرسانی خودکار فعال شد':'بروزرسانی فقط با دکمه انجام می‌شود')};
   const s=p.querySelector('#u-sync');if(s)s.onclick=()=>{pullProgress()};
-  p.querySelector('#u-out').onclick=logout;
+  const pw=p.querySelector('#u-pw');if(pw)pw.onclick=()=>{closeUserPop();changePassword()};
+  const on=p.querySelector('#u-online');if(on)on.onclick=()=>{const em=AUTH.email;clearAuth();LG.email=em;route();showLogin('login')};
+  const us=p.querySelector('#u-users');if(us)us.onclick=()=>{closeUserPop();location.hash='#/users'};
+  p.querySelector('#u-out').onclick=()=>logout();
 }
 document.addEventListener('mousedown',e=>{const p=$('.u-pop');if(p&&!p.contains(e.target)&&!e.target.closest('#user-chip'))p.remove()});
+
+/* تغییر رمز عبور (حالت آنلاین) */
+function changePassword(){
+  if(!isCloud())return;
+  modal('تغییر رمز عبور',`<form id="cp-form" autocomplete="on" onsubmit="return false">
+    <input type="email" name="email" autocomplete="username" value="${esc(AUTH.email)}" readonly class="inp" dir="ltr" style="margin-bottom:.9rem;opacity:.75">
+    <div class="field"><label for="cp-cur">رمز فعلی</label><input class="inp" id="cp-cur" type="password" dir="ltr" autocomplete="current-password"></div>
+    <div class="field"><label for="cp-new">رمز جدید</label><input class="inp" id="cp-new" type="password" dir="ltr" autocomplete="new-password">${pwMeter('cp-meter')}</div>
+    <div class="field"><label for="cp-new2">تکرار رمز جدید</label><input class="inp" id="cp-new2" type="password" dir="ltr" autocomplete="new-password"></div>
+    <p class="lg-err" id="cp-err" role="alert" style="margin:0"></p><p class="muted" style="font-size:.78rem;margin:.4rem 0 0">پس از تغییر، نشست‌های دستگاه‌های دیگر بسته می‌شود.</p></form>`,()=>{
+    const cur=$('#cp-cur').value,n1=$('#cp-new').value,n2=$('#cp-new2').value,er=$('#cp-err');er.textContent='';
+    if(!cur){er.textContent='رمز فعلی را وارد کنید.';return false}
+    if(n1.length<PW_MIN){er.textContent=`رمز جدید باید دست‌کم ${fa(PW_MIN)} نویسه باشد.`;return false}
+    if(n1!==n2){er.textContent='تکرار رمز جدید با آن یکسان نیست.';return false}
+    if(n1===cur){er.textContent='رمز جدید باید با رمز فعلی متفاوت باشد.';return false}
+    const ok=$('#m-ok');ok.disabled=true;
+    api('/api/auth/change-password',{method:'POST',body:{current:cur,password:n1}})
+      .then(r=>{$('#modal').classList.remove('open');toast(r.message)})
+      .catch(e=>{if(e.status===401)return $('#modal').classList.remove('open'),expired();er.textContent=e.message})
+      .finally(()=>{ok.disabled=false});
+    return false});
+  bindMeter($('#cp-new'),'cp-meter');
+  $('#m-ok').innerHTML=ic('check')+' تغییر رمز';
+  ['cp-cur','cp-new','cp-new2'].forEach(id=>$('#'+id).addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('#m-ok').click()}}));
+}
+
+/* ================= مدیریت کاربران (فقط مدیر سامانه، حالت آنلاین) ================= */
+let UM={q:'',f:'all',list:null,settings:null,me:null};
+const UM_ST={active:['فعال','ok'],pending:['در انتظار تأیید','wait'],disabled:['غیرفعال','off']};
+async function vUsers(){
+  setTitle('مدیریت کاربران','کاربران، نقش‌ها، تأیید حساب و گزارش پیشرفت');
+  const v=$('#view');
+  if(!UM.list)v.innerHTML=`<div class="card um-load"><span class="lg-spin"></span> در حال دریافت فهرست کاربران…</div>`;else drawUsers();
+  try{const r=await api('/api/admin/users');UM.list=r.users;UM.settings=r.settings;UM.me=r.me}
+  catch(e){if(e.status===401)return expired();if(e.status===403){refreshMe();return}if(location.hash.startsWith('#/users'))v.innerHTML=`<div class="card um-load">${esc(e.message)} <button class="btn btn-ghost btn-sm" id="um-retry">${ic('refresh',14)} تلاش دوباره</button></div>`;const b=$('#um-retry');if(b)b.onclick=vUsers;return}
+  if(location.hash.startsWith('#/users'))drawUsers();
+}
+function umFiltered(){
+  const q=UM.q.trim().toLowerCase(),qe=normEmail(UM.q);
+  return UM.list.filter(u=>(!q||u.email.includes(qe)||u.name.toLowerCase().includes(q))&&
+    (UM.f==='all'||(UM.f==='admin'?u.role==='admin':UM.f==='unverified'?!u.verified:u.status===UM.f)));
+}
+function drawUsers(){
+  const L=UM.list||[],S=UM.settings||{mode:'open',domains:[]};
+  const n=k=>L.filter(k).length;
+  const avg=L.length?Math.round(L.reduce((a,u)=>a+u.pct,0)/L.length):0;
+  const v=$('#view');
+  v.innerHTML=`<div class="um-stats">${[[L.length,'کاربر'],[n(u=>u.status==='active'),'فعال'],[n(u=>u.status==='pending'),'در انتظار تأیید'],[n(u=>u.role==='admin'),'مدیر'],[avg+'٪','میانگین پیشرفت']].map(([a,b])=>`<div class="card"><b>${fa(a)}</b><span>${b}</span></div>`).join('')}</div>
+    <div class="card um-set"><h4>${ic('settings',16)} شیوهٔ ثبت‌نام</h4>
+      <div class="um-modes">${[['open','ثبت‌نام آزاد','هر کس با تأیید ایمیل وارد می‌شود'],['approval','فقط با تأیید مدیر','پس از تأیید ایمیل، مدیر باید حساب را فعال کند'],['domain','فقط دامنهٔ ایمیل مجاز','مثلاً فقط ایمیل‌های سازمانی']].map(([k,t,d])=>`<label class="${S.mode===k?'on':''}"><input type="radio" name="um-mode" value="${k}" ${S.mode===k?'checked':''}><b>${t}</b><small>${d}</small></label>`).join('')}</div>
+      <div class="um-dom" ${S.mode==='domain'?'':'hidden'}><label for="um-domains">دامنه‌های مجاز (با ویرگول یا فاصله جدا کنید)</label><input class="inp" id="um-domains" dir="ltr" placeholder="nicico.com, example.org" value="${esc((S.domains||[]).join(', '))}"></div>
+      <div class="um-setact"><button class="btn btn-cu btn-sm" id="um-save">${ic('check',15)} ذخیرهٔ تنظیمات</button></div></div>
+    <div class="um-bar"><div class="um-q">${ic('search',16)}<input class="inp" id="um-q" type="search" placeholder="جستجوی نام یا ایمیل…" value="${esc(UM.q)}"></div>
+      <div class="tb-seg um-f">${[['all','همه'],['pending','در انتظار'],['active','فعال'],['disabled','غیرفعال'],['unverified','تأییدنشده'],['admin','مدیران']].map(([k,t])=>`<button type="button" data-f="${k}" class="${UM.f===k?'on':''}">${t}</button>`).join('')}</div>
+      <span class="tb-sp"></span><button class="btn btn-ghost btn-sm" id="um-ref" title="بارگذاری دوباره">${ic('refresh',15)}</button><button class="btn btn-ghost btn-sm" id="um-csv">${ic('download',15)} خروجی CSV پیشرفت</button></div>
+    <div class="card um-wrap"><table class="um-t"><thead><tr><th>کاربر</th><th>نقش</th><th>وضعیت</th><th>پیشرفت</th><th>آخرین فعالیت</th><th>عملیات</th></tr></thead><tbody id="um-body"></tbody></table></div>`;
+  drawUserRows();
+  const q=$('#um-q');let t;q.oninput=()=>{clearTimeout(t);t=setTimeout(()=>{UM.q=q.value;drawUserRows()},150)};
+  v.querySelectorAll('[data-f]').forEach(b=>b.onclick=()=>{UM.f=b.dataset.f;v.querySelectorAll('[data-f]').forEach(x=>x.classList.toggle('on',x===b));drawUserRows()});
+  v.querySelectorAll('input[name="um-mode"]').forEach(r=>r.onchange=()=>{v.querySelectorAll('.um-modes label').forEach(l=>l.classList.toggle('on',l.contains(r)));$('.um-dom').hidden=r.value!=='domain'});
+  $('#um-save').onclick=async()=>{const mode=(v.querySelector('input[name="um-mode"]:checked')||{}).value;
+    try{const r=await api('/api/admin/settings',{method:'PUT',body:{registration:mode,domains:$('#um-domains').value}});UM.settings=r.settings;SERVER_INFO.registration=r.settings;toast('تنظیمات ثبت‌نام ذخیره شد')}catch(e){toast(e.message)}};
+  $('#um-ref').onclick=vUsers;
+  $('#um-csv').onclick=umCsv;
+}
+function drawUserRows(){
+  const tb=$('#um-body');if(!tb)return;const rows=umFiltered();
+  tb.innerHTML=rows.length?rows.map(u=>{const st=UM_ST[u.status]||[u.status,''],me=u.id===UM.me;
+    return `<tr data-id="${esc(u.id)}"><td><div class="um-u"><span class="av">${esc(initial(u.name))}</span><div><b>${esc(u.name)}${me?' <small>(شما)</small>':''}</b><span dir="ltr">${esc(u.email)}</span></div></div></td>
+      <td>${u.role==='admin'?`<span class="um-pill adm">${ic('shield',12)} مدیر</span>`:'<span class="um-pill">آموزش‌گیرنده</span>'}</td>
+      <td><span class="um-pill ${st[1]}">${st[0]}</span>${u.verified?'':'<small class="um-nv">ایمیل تأییدنشده</small>'}</td>
+      <td><div class="um-prog"><div class="bar"><i style="width:${u.pct}%"></i></div><b>${fa(u.pct)}٪</b></div><small class="um-sub">${fa(u.done)}${u.total?' از '+fa(u.total):''} درس${u.quizAvg!=null?` · آزمون ${fa(u.quizAvg)}٪`:''}</small></td>
+      <td><small>${faDateTime(u.lastActive)}</small></td>
+      <td><div class="um-act">${u.status==='pending'?`<button class="btn btn-cu btn-sm" data-a="approve">تأیید حساب</button>`:''}
+        ${me?'':u.status==='disabled'?`<button class="btn btn-ghost btn-sm" data-a="enable">فعال‌سازی</button>`:u.status==='active'?`<button class="btn btn-ghost btn-sm" data-a="disable">غیرفعال</button>`:''}
+        ${me?'':u.role==='admin'?`<button class="btn btn-ghost btn-sm" data-a="unadmin">گرفتن نقش مدیر</button>`:`<button class="btn btn-ghost btn-sm" data-a="admin">مدیر شود</button>`}
+        <button class="btn btn-ghost btn-sm" data-a="reset" title="ارسال لینک بازنشانی رمز به ایمیل کاربر">${ic('key',14)} لینک رمز</button></div></td></tr>`}).join('')
+    :`<tr><td colspan="6" class="um-empty">${UM.list&&UM.list.length?'کاربری با این شرایط پیدا نشد.':'هنوز کاربری ثبت‌نام نکرده است.'}</td></tr>`;
+  tb.querySelectorAll('[data-a]').forEach(b=>b.onclick=()=>umAction(b.closest('tr').dataset.id,b.dataset.a,b));
+}
+async function umAction(id,a,btn){
+  const u=UM.list.find(x=>x.id===id);if(!u)return;
+  const Q={approve:[`حساب «${u.name}» تأیید و فعال شود؟`,{status:'active'}],enable:[`حساب «${u.name}» دوباره فعال شود؟`,{status:'active'}],
+    disable:[`حساب «${u.name}» غیرفعال شود؟ کاربر از همهٔ دستگاه‌ها خارج می‌شود و تا فعال‌سازی دوباره نمی‌تواند وارد شود.`,{status:'disabled'}],
+    admin:[`نقش «مدیر سامانه» به ${u.name} داده شود؟ مدیر به مدیریت محتوا و کاربران دسترسی کامل دارد.`,{role:'admin'}],
+    unadmin:[`نقش مدیر از ${u.name} گرفته شود؟`,{role:'learner'}],
+    reset:[`لینک تعیین رمز جدید (اعتبار ۳۰ دقیقه) به ${u.email} ارسال شود؟`,null]}[a];
+  if(!Q||!confirm(Q[0]))return;
+  btn.disabled=true;
+  try{
+    if(a==='reset'){const r=await api(`/api/admin/users/${encodeURIComponent(id)}/reset-link`,{method:'POST'});toast(r.message);if(r.devLink)console.info('devLink',r.devLink)}
+    else{const r=await api(`/api/admin/users/${encodeURIComponent(id)}`,{method:'PATCH',body:Q[1]});Object.assign(u,r.user);drawUsers();toast('تغییر ذخیره شد')}
+  }catch(e){if(e.status===401)return expired();toast(e.message)}
+  finally{btn.disabled=false}
+}
+async function umCsv(){
+  try{const r=await api('/api/admin/report.csv',{raw:true});const b=await r.blob();
+    const [y,m,d]=jToday();const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=`mesamoz-progress-${y}-${String(m).padStart(2,'0')}-${String(d).padStart(2,'0')}.csv`;document.body.appendChild(a);a.click();a.remove();
+    setTimeout(()=>URL.revokeObjectURL(a.href),60000);toast('گزارش پیشرفت دریافت شد')}
+  catch(e){if(e.status===401)return expired();toast(e.message)}
+}
 
 /* ================= بروزرسانی نسخه ================= */
 const autoUpdate=()=>lsGet('cu-auto-update')!=='0';
@@ -21931,8 +22246,16 @@ async function applyUpdate(ver){
   $('#user-chip').onclick=()=>openUserPop();
   if(/[?&]v=/.test(location.search))history.replaceState(null,'',location.pathname+location.hash);
   renderUserUi();
-  if(!AUTH)showLogin();
-  probeServer().then(ok=>{if(ok&&isCloud())pullProgress();if(LG.step==='phone'&&!$('#ca-login').hidden)renderLogin()});
+  /* منوی سایدبار با نقش کاربر (آنلاین/مدیر) هماهنگ شود؛ صفحه‌های مدیریتی که منتظر نقش بودند رسم شوند */
+  if(/^#\/(users|admin)\b/.test(location.hash))route();
+  else{const h=(location.hash.replace(/^#\/?/,'')||'home').split(/[/?]/)[0];renderMenu(['topic','lesson'].includes(h)?'topics':h)}
+  const link=authLink();
+  if(link)handleAuthLink(link);
+  else if(!AUTH)showLogin();
+  probeServer().then(ok=>{
+    if(ok&&isCloud()){pullProgress();refreshMe()}
+    const lg=$('#ca-login');if(!lg.hidden&&!LG.busy&&['login','local','register'].includes(LG.mode))renderLogin();
+  });
   checkUpdate(false,true);
   setInterval(()=>checkUpdate(false),CA_CONFIG.checkEveryMin*60000);
   setInterval(()=>{if(isCloud()&&document.visibilityState==='visible')pullProgress()},5*60000);

@@ -42,10 +42,12 @@ import java.io.FileOutputStream
 
 /**
  * مس‌آموز — پوستهٔ اندروید.
- * سایت را از [BuildConfig.SITE_URL] باز می‌کند تا ورود با شمارهٔ همراه، همگام‌سازی پیشرفت و
+ * سایت را از [BuildConfig.SITE_URL] باز می‌کند تا ورود با ایمیل، همگام‌سازی پیشرفت و
  * به‌روزرسانی محتوا مثل نسخهٔ وب کار کند. سرویس‌ورکر سایت پس از اولین اجرا آن را آفلاین هم نگه می‌دارد.
  * اگر بار اول اینترنت نباشد، نسخهٔ داخل برنامه (assets/www/index.html) باز می‌شود و با برگشت اتصال
  * دوباره به سایت برمی‌گردد.
+ * پیوندهای ایمیل (https://mesamoz.ir/#/verify?token=… و #/reset?token=…) از طریق App Links
+ * داخل همین برنامه باز می‌شوند.
  */
 class MainActivity : Activity() {
 
@@ -160,7 +162,24 @@ class MainActivity : Activity() {
         }
 
         if (savedInstanceState != null) web.restoreState(savedInstanceState)
-        else web.loadUrl(siteUrl)
+        else web.loadUrl(siteLink(intent) ?: siteUrl)
+    }
+
+    /** پیوندی از دامنهٔ سایت که با App Links به برنامه رسیده (مثلاً لینک تأیید ایمیل یا بازنشانی رمز) */
+    private fun siteLink(i: Intent?): String? {
+        val src = i ?: return null
+        val u = src.data ?: return null
+        if (src.action != Intent.ACTION_VIEW || u.scheme != "https" || u.host != siteHost) return null
+        return u.toString()
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        setIntent(intent)
+        val link = siteLink(intent) ?: return
+        offlineMode = false
+        stopWatching()
+        web.loadUrl(link)
     }
 
     private fun loadOffline() {

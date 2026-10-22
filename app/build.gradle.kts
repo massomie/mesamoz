@@ -3,20 +3,23 @@ plugins {
     id("org.jetbrains.kotlin.android")
 }
 
-val siteUrl = (project.findProperty("SITE_URL") as String?) ?: "https://academy.engpmis.ir/"
+val siteUrl = (project.findProperty("SITE_URL") as String?) ?: "https://mesamoz.ir/"
 val ksFile: String? = System.getenv("KEYSTORE_FILE")
 
 android {
+    // namespace (پکیج کد Kotlin) عمداً همان قبلی است؛ شناسهٔ نصب applicationId است
     namespace = "ir.engpmis.academy"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "ir.engpmis.academy"
+        applicationId = "ir.mesamoz.app"
         minSdk = 24
         targetSdk = 35
         versionCode = 1
         versionName = "1.0.0"
         buildConfigField("String", "SITE_URL", "\"$siteUrl\"")
+        // دامنهٔ سایت برای App Links (باز شدن پیوندهای ایمیل داخل برنامه)
+        manifestPlaceholders["siteHost"] = (java.net.URI(siteUrl).host ?: "mesamoz.ir")
     }
 
     signingConfigs {

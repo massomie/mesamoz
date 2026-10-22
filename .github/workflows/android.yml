@@ -26,8 +26,11 @@ jobs:
           KS: ${{ secrets.KEYSTORE_BASE64 }}
         run: |
           if [ -n "$KS" ]; then
-            echo "$KS" | base64 -d > "$RUNNER_TEMP/release.jks"
+            echo "$KS" | tr -d ' \r\n' | base64 -d > "$RUNNER_TEMP/release.jks"
             echo "KEYSTORE_FILE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+            echo "امضا با کلید ثابت (KEYSTORE_BASE64)"
+          else
+            echo "::warning::Secret KEYSTORE_BASE64 تعریف نشده؛ APK با کلید آزمایشی امضا می‌شود و روی نسخهٔ قبلی به‌روز نمی‌شود."
           fi
 
       - name: Build release APK

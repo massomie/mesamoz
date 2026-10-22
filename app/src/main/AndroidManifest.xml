@@ -23,6 +23,14 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <!-- پیوندهای ایمیل (تأیید ایمیل، بازنشانی رمز) داخل برنامه باز شوند.
+                 تأیید خودکار به فایل https://mesamoz.ir/.well-known/assetlinks.json روی سرور نیاز دارد. -->
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="https" android:host="${siteHost}" android:path="/" />
+            </intent-filter>
         </activity>
     </application>
 </manifest>
