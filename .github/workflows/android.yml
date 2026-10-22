@@ -5,6 +5,9 @@ on:
     branches: [main]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -41,3 +44,15 @@ jobs:
         with:
           name: copper-academy-apk
           path: copper-academy.apk
+
+      - name: نسخه
+        id: ver
+        run: echo "name=$(grep -oP 'versionName = "\K[^"]+' app/build.gradle.kts)" >> "$GITHUB_OUTPUT"
+
+      - name: انتشار در Releases (دانلود عمومی APK)
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.ver.outputs.name }}-build${{ github.run_number }}
+          name: مس‌آموز ${{ steps.ver.outputs.name }} (ساخت ${{ github.run_number }})
+          files: copper-academy.apk
+          make_latest: true

@@ -32,7 +32,7 @@ SITE_URL=https://academy.engpmis.ir/
 ### روش ۲: GitHub Actions (بدون نصب چیزی)
 1. پوشه را در یک مخزن GitHub روی شاخهٔ `main` قرار دهید (push کنید).
 2. در تب **Actions**، کار «Build APK» اجرا می‌شود.
-3. فایل `copper-academy.apk` را از بخش Artifacts همان اجرا دانلود کنید.
+3. فایل `copper-academy.apk` را از بخش **Releases** مخزن دانلود کنید. این بخش عمومی است و ورود به GitHub لازم ندارد. همان فایل در Artifacts همان اجرا هم هست.
 4. برای امضای ثابت، این چهار Secret را در **Settings ▸ Secrets and variables ▸ Actions** تعریف کنید:
    - `KEYSTORE_BASE64`: خروجی `base64 -w0 release.jks`
    - `KEYSTORE_PASSWORD`
