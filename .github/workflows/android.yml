@@ -40,7 +40,16 @@ jobs:
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           chmod +x gradlew
-          ./gradlew assembleRelease --no-daemon
+          set +e
+          ./gradlew assembleRelease --no-daemon 2>&1 | tee build.log
+          rc=${PIPESTATUS[0]}
+          set -e
+          if [ "$rc" -ne 0 ]; then
+            # خلاصهٔ خطا به‌صورت annotation تا بدون باز کردن لاگ کامل دیده شود
+            msg=$(grep -E "^e: |error:|ERROR|What went wrong|FAILURE|Execution failed|> " build.log | head -40 | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')
+            echo "::error title=Gradle build failed::$msg"
+            exit "$rc"
+          fi
           cp app/build/outputs/apk/release/app-release.apk copper-academy.apk
 
       - uses: actions/upload-artifact@v4
