@@ -24,10 +24,20 @@ jobs:
       - name: Keystore (اختیاری)
         env:
           KS: ${{ secrets.KEYSTORE_BASE64 }}
+          SP: ${{ secrets.KEYSTORE_PASSWORD }}
+          KA: ${{ secrets.KEY_ALIAS }}
         run: |
           if [ -n "$KS" ]; then
             echo "$KS" | tr -d ' \r\n' | base64 -d > "$RUNNER_TEMP/release.jks"
             echo "KEYSTORE_FILE=$RUNNER_TEMP/release.jks" >> "$GITHUB_ENV"
+            # نام کلید: مقدار Secret بدون فاصله/خط اضافه؛ اگر در keystore نبود، تنها کلید موجود
+            ALIAS=$(printf '%s' "$KA" | tr -d ' \r\n\t')
+            if ! keytool -list -keystore "$RUNNER_TEMP/release.jks" -storepass "$SP" -alias "$ALIAS" >/dev/null 2>&1; then
+              FOUND=$(keytool -list -keystore "$RUNNER_TEMP/release.jks" -storepass "$SP" 2>/dev/null | grep -i PrivateKeyEntry | head -1 | cut -d, -f1)
+              echo "::warning::Secret KEY_ALIAS با نام کلید داخل keystore یکی نیست؛ از کلید «$FOUND» استفاده شد. مقدار KEY_ALIAS را اصلاح کنید."
+              ALIAS="$FOUND"
+            fi
+            echo "KEY_ALIAS=$ALIAS" >> "$GITHUB_ENV"
             echo "امضا با کلید ثابت (KEYSTORE_BASE64)"
           else
             echo "::warning::Secret KEYSTORE_BASE64 تعریف نشده؛ APK با کلید آزمایشی امضا می‌شود و روی نسخهٔ قبلی به‌روز نمی‌شود."
@@ -36,7 +46,6 @@ jobs:
       - name: Build release APK
         env:
           KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
         run: |
           chmod +x gradlew
