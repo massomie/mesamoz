@@ -1,3 +1,5 @@
+import java.net.URI
+
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
@@ -19,7 +21,7 @@ android {
         versionName = "1.0.0"
         buildConfigField("String", "SITE_URL", "\"$siteUrl\"")
         // دامنهٔ سایت برای App Links (باز شدن پیوندهای ایمیل داخل برنامه)
-        manifestPlaceholders["siteHost"] = (java.net.URI(siteUrl).host ?: "mesamoz.ir")
+        manifestPlaceholders["siteHost"] = (URI(siteUrl).host ?: "mesamoz.ir")
     }
 
     signingConfigs {
