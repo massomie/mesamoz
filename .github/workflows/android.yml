@@ -46,7 +46,7 @@ jobs:
           set -e
           if [ "$rc" -ne 0 ]; then
             # خلاصهٔ خطا به‌صورت annotation تا بدون باز کردن لاگ کامل دیده شود
-            msg=$(grep -E "^e: |error:|ERROR|What went wrong|FAILURE|Execution failed|> " build.log | head -40 | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')
+            msg=$(grep -v "^> Task" build.log | grep -E -A3 "^e: |error:|ERROR|What went wrong|Execution failed|Lint found" | head -60 | sed ':a;N;$!ba;s/%/%25/g;s/\r//g;s/\n/%0A/g')
             echo "::error title=Gradle build failed::$msg"
             exit "$rc"
           fi
